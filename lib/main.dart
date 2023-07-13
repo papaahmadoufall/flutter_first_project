@@ -3,9 +3,9 @@ import 'package:first_project/gradient_container.dart';
 
 void main() {
   runApp(
-  const  MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: GradientContainer()
+        body:  GradientContainer.gradient()
       ),
     ),
   );
