@@ -1,4 +1,5 @@
 import 'dart:ffi';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -13,15 +14,13 @@ class DiceRoller extends StatefulWidget {
 class _DiceRollerState extends State<DiceRoller> {
   var activeImageDice = "assets/images/dice-1.png";
   var diceFace = "";
+  
   void rollDice() {
+
     setState(() {
-      if (activeImageDice == "assets/images/dice-1.png") {
-        diceFace = "Face 1";
-        activeImageDice = "assets/images/dice-2.png";
-      } else {
-        diceFace = "Face 2";
-        activeImageDice = "assets/images/dice-1.png";
-      }
+      var randomNumber = Random().nextInt(6)+1;
+      diceFace = "Face $randomNumber";
+      activeImageDice = "assets/images/dice-$randomNumber.png";
     });
   }
 
