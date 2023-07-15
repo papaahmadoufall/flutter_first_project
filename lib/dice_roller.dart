@@ -18,9 +18,8 @@ class _DiceRollerState extends State<DiceRoller> {
   var randomNumber = 1;
 
   void rollDice() {
-
     setState(() {
-      randomNumber = randomizer.nextInt(6)+1;
+      randomNumber = randomizer.nextInt(6) + 1;
     });
   }
 
@@ -29,10 +28,11 @@ class _DiceRollerState extends State<DiceRoller> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text( "Face $randomNumber",
-        style: const TextStyle(
-          fontSize: 28,
-          color: Colors.white,
+        Text(
+          "Face $randomNumber",
+          style: const TextStyle(
+            fontSize: 28,
+            color: Colors.white,
           ),
         ),
         const SizedBox(height: 20),
