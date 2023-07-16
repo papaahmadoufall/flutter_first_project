@@ -1,6 +1,6 @@
 # first_project
-
-A new Flutter project.
+That's my first project with flutter.
+I just build a dice generator
 
 ## Getting Started
 
